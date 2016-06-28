@@ -68,7 +68,7 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
                     break;*/
 
                 // When bot receive "profile"
-                case 'profile':
+                /*case 'profile':
 
                     $user = $bot->userProfile($message['sender']['id']);
                     $bot->send(new StructuredMessage($message['sender']['id'],
@@ -81,7 +81,7 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
                     ));
 
                     break;
-
+*/
                 // When bot receive "button"
                 case 'button':
                   $bot->send(new StructuredMessage($message['sender']['id'],

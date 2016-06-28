@@ -33,7 +33,6 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
 } else {
 
     // Other event
-    $bot->send(new Message($message['sender']['id'], 'This is a simple text message.'));
 
     $data = json_decode(file_get_contents("php://input"), true, 512, JSON_BIGINT_AS_STRING);
     if (!empty($data['entry'][0]['messaging'])) {

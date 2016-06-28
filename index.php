@@ -22,7 +22,6 @@ use pimax\Messages\MessageReceiptElement;
 use pimax\Messages\Address;
 use pimax\Messages\Summary;
 use pimax\Messages\Adjustment;
-echo "dsf";
 // Make Bot Instance
 $bot = new FbBotApp($token);
 

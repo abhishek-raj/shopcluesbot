@@ -125,7 +125,7 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
                 break;
 
                 // When bot receive "receipt"
-                case 'receipt':
+                /*case 'receipt':
 
                     $bot->send(new StructuredMessage($message['sender']['id'],
                         StructuredMessage::TYPE_RECEIPT,
@@ -167,7 +167,7 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
                                 ])
                             ]
                         ]
-                    ));
+                    ));*/
 
                 break;
 
